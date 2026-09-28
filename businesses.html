@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Businesses | BizConnect</title><link rel="stylesheet" href="style.css"></head>
+<body><header><nav class="navbar"><a class="logo" href="index.html">Biz<span>Connect</span></a>
+<div class="nav-links"><a href="index.html">Home</a><a class="active" href="businesses.html">Businesses</a><a href="services.html">Services</a><a href="register.html">Register</a><a href="checkout.html">🛒 Cart <span id="cartCount">0</span></a></div></nav></header>
+<section class="page-banner"><h1>Explore Businesses</h1><p>Find products and services from small businesses.</p></section>
+<section class="section"><div class="search-row"><input id="businessSearch" type="search" placeholder="Search business or category..." oninput="filterBusinesses()">
+<select id="categoryFilter" onchange="filterBusinesses()"><option value="all">All Categories</option><option>Fashion</option><option>Food</option><option>Beauty</option><option>Repair</option><option>Education</option></select></div>
+<div id="businessGrid" class="business-grid">
+<article class="business-card" data-category="Fashion" data-search="Style Corner Fashion clothing tailoring saree dress">
+<div class="business-icon">👗</div><h3>Style Corner</h3><p class="category-name">Fashion</p><p>Clothing, tailoring and custom designs.</p>
+<div class="products" id="products-style-corner"></div><button onclick="contactBusiness('Style Corner')">Contact Business</button></article>
+<article class="business-card" data-category="Food" data-search="Sweet Home Bakery Food cakes snacks bakery">
+<div class="business-icon">🍰</div><h3>Sweet Home Bakery</h3><p class="category-name">Food</p><p>Fresh cakes, snacks and bakery products.</p>
+<div class="products" id="products-sweet-home-bakery"></div><button onclick="contactBusiness('Sweet Home Bakery')">Contact Business</button></article>
+<article class="business-card" data-category="Beauty" data-search="Glow Beauty Studio Beauty hair makeup facial">
+<div class="business-icon">💇</div><h3>Glow Beauty Studio</h3><p class="category-name">Beauty</p><p>Hair styling, makeup and beauty services.</p>
+<div class="products" id="products-glow-beauty-studio"></div><button onclick="contactBusiness('Glow Beauty Studio')">Contact Business</button></article>
+<article class="business-card" data-category="Repair" data-search="QuickFix Services Repair appliance electronics service">
+<div class="business-icon">🔧</div><h3>QuickFix Services</h3><p class="category-name">Repair</p><p>Home appliance and electronic repair services.</p>
+<div class="products" id="products-quickfix-services"></div><button onclick="contactBusiness('QuickFix Services')">Contact Business</button></article>
+<article class="business-card" data-category="Education" data-search="Bright Learning Centre Education tuition training classes">
+<div class="business-icon">📚</div><h3>Bright Learning Centre</h3><p class="category-name">Education</p><p>School tuition and skill development classes.</p>
+<div class="products" id="products-bright-learning-centre"></div><button onclick="contactBusiness('Bright Learning Centre')">Contact Business</button></article>
+<article class="business-card" data-category="Fashion" data-search="Handmade Hub Fashion bags gifts handmade">
+<div class="business-icon">👜</div><h3>Handmade Hub</h3><p class="category-name">Fashion</p><p>Handmade bags, gifts and creative products.</p>
+<div class="products" id="products-handmade-hub"></div><button onclick="contactBusiness('Handmade Hub')">Contact Business</button></article>
+</div></section>
+<footer><p>© 2026 BizConnect. Discover local businesses.</p></footer><script src="script.js"></script></body></html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cart & Payment | BizConnect</title><link rel="stylesheet" href="style.css"></head>
+<body><header><nav class="navbar"><a class="logo" href="index.html">Biz<span>Connect</span></a>
+<div class="nav-links"><a href="index.html">Home</a><a href="businesses.html">Businesses</a><a href="services.html">Services</a><a href="register.html">Register</a><a class="active" href="checkout.html">🛒 Cart <span id="cartCount">0</span></a></div></nav></header>
+<section class="page-banner"><h1>Cart & Payment</h1><p>Review your order and complete the demo payment.</p></section>
+<section class="section checkout-layout"><div class="cart-box"><h2>Your Cart</h2><div id="cartItems"></div><div class="total-row"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn secondary" onclick="clearCart()">Clear Cart</button></div>
+<div class="form-box payment-box"><h2>Payment Details</h2><form id="paymentForm" onsubmit="processPayment(event)">
+<label>Customer Name</label><input id="customerName" required placeholder="Enter your name">
+<label>Phone Number</label><input id="customerPhone" type="tel" pattern="[0-9]{10}" required placeholder="10-digit phone number">
+<label>Payment Method</label><select id="paymentMethod" required><option value="">Choose method</option><option>UPI</option><option>Debit / Credit Card</option><option>Cash on Delivery / Pay at Service</option></select>
+<div id="paymentExtra"></div>
+<button class="btn" type="submit">🔒 Pay / Confirm Order</button></form><div id="paymentResult" class="success-box" hidden></div></div></section>
+<footer><p>© 2026 BizConnect. Demo checkout — connect a real payment gateway for live transactions.</p></footer><script src="script.js"></script></body></html>
